@@ -1,0 +1,28 @@
+{
+  "name": "qcloud-api",
+  "version": "1.0.0",
+  "description": "腾讯云API",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules src/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagucc/qcloud-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagucc/qcloud-api/issues"
+  },
+  "homepage": "https://github.com/nagucc/qcloud-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "qcloudsms_js": "^0.1.0"
+  }
+}
