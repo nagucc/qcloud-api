@@ -23,7 +23,7 @@ router.put(
 
     const sender = qcsms.SmsSingleSender();
     sender.sendWithParam(
-      tel.nationcode, // 国家区号
+      tel.nationcode || 86, // 国家区号
       [tel.mobile], // 电话号码
       tplId || sms.templateId, // 模板ID
       params, // 模板参数
