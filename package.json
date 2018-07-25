@@ -23,6 +23,7 @@
     "debug": "^3.1.0",
     "express": "^4.16.3",
     "express-jwt": "^5.3.1",
+    "qcloud-cdn-node-sdk": "^1.0.0",
     "qcloudsms_js": "^0.1.0"
   }
 }

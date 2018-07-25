@@ -12,6 +12,10 @@ export const sms = {
   appKey: process.env.SMS_APPKEY,
   sign: process.env.SMS_SIGN,
   templateId: process.env.SMS_TEMPLATE_ID,
+};
 
+export const cdnConfig = {
+  appId: process.env.CDN_APPID || process.env.SMS_APPID,
+  appKey: process.env.CDN_APPKEY || process.env.SMS_APPKEY,
 };
 

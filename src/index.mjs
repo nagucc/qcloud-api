@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import { host, port, secret, info } from './config.mjs';
 
 import sms from './controllers/sms.mjs';
+import cdn from './controllers/cdn.mjs';
 
 const app = express();
 
@@ -30,6 +31,7 @@ app.use('*', (req, res, next) => {
   next();
 });
 app.use('/sms', sms);
+app.use('/cdn', cdn);
 
 app.listen(port, () => {
   info(`The server is running at http://${host}`);
